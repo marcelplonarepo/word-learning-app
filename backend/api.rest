@@ -1,0 +1,53 @@
+###
+GET http://localhost:5000/words/read
+
+###
+GET http://localhost:5000/words/read/fruits
+
+###
+GET http://localhost:5000/words/words
+
+### 
+POST http://localhost:5000/words/create
+Content-Type: application/json
+
+{
+    "data": [
+        {
+            "english": "banana",
+            "polish": "banan",
+            "category": "fruits"
+        }
+    ]
+}
+
+###
+
+POST http://localhost:5000/words/create
+Content-Type: application/json
+
+{
+    "category": "fruits",
+    "image": "https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4",
+    "words": [
+        {
+            "en": "apple",
+            "pl": "jabłko"
+        }
+    ]
+}
+
+
+###
+POST http://localhost:5000/words/create
+Content-Type: application/json
+
+{
+    "category": "emotions",
+    "words": [
+        {
+            "en": "milk",
+            "pl": "mleko"
+        }
+    ]
+}

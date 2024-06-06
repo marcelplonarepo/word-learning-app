@@ -1,0 +1,115 @@
+.optionWindow{
+    width:550px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 40px;
+    overflow: hidden;
+}
+
+
+
+.settings{
+    font-size: 36px;
+    font-weight: 600;
+    color: #282828;
+    margin-bottom: 15px;
+}
+
+.set{
+    font-size: 26px;
+    font-weight: 500;
+    color:#444444;
+    margin-left: 30px;
+}
+
+.optionButton > div{
+    font-size: 16px;
+    margin-left: 10px;
+    color:rgb(149, 4, 4);
+    font-weight: 400;
+    /* background-color: #444444; */
+    width: 140px;
+}
+
+.gear{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    transform: translate(22%,26%);
+}
+
+.gear svg{
+    width:400px;
+    height:400px;
+    fill:#6641a313;
+
+}
+
+
+
+.option{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.optionButton{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+    /* justify-content: center; */
+}
+
+.hiddenRadio{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    display: none;
+}
+
+.labelButton{
+    border: none;
+    outline: none;
+    min-width:20px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 32, 90);
+    color:white;
+    text-align: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+
+
+
+.labelButton:first-of-type{
+    border-radius: 10px 0 0 10px;
+}
+
+.labelButton:last-of-type{
+    border-radius: 0 10px 10px 0;
+}
+
+.hiddenRadio:checked + .labelButton{
+    background-color: rgb(64, 65, 156);
+    border: 3px solid  rgb(86, 88, 179);
+    border-radius: 4px;
+}
+
+.hiddenRadio:not(:checked) + .labelButton:hover{
+    background-color: rgb(49, 50, 114);
+}

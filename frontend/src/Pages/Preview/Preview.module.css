@@ -1,0 +1,85 @@
+.preview {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    border: 2px solid rgb(192, 192, 192);
+    align-self: start;
+    border-collapse: collapse;
+    margin-bottom: 300px;
+    table-layout:fixed;
+    border-radius: 100%;
+}
+
+.preview img {
+    width:30px;
+}
+
+.preview th{
+    background-color: rgb(212, 211, 236);
+    color:rgb(48, 15, 99);
+    /* border-color: white; */
+}
+
+.preview th > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+.preview td,
+.preview th {
+    border: 1px solid #bebebe;
+    padding: 8px;
+    width: calc(25% - 40px);
+}
+
+.preview tr:nth-child(even) {
+    background-color: #f2f1f9;
+}
+
+
+
+.preview th:nth-of-type(6n - 5),
+.preview td:nth-of-type(6n - 5),
+.preview th:nth-of-type(6n - 2),
+.preview td:nth-of-type(6n - 2)
+{
+  width: 80px;
+}
+
+.tolearn{
+    padding: 16px 25px;
+    border-radius: 15px;
+    background-color: #200661;
+    color:white;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    gap:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.tolearn div svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tolearn svg {
+    fill: white;
+    stroke: white;
+    stroke-width: 0.5;
+    width: 40px;
+    height: 40px;
+}
+
+.decoration{
+    text-decoration: none;
+}
+
+

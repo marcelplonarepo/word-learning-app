@@ -1,0 +1,28 @@
+.sidebar{
+    width:80px;
+    background-color: rgb(68, 75, 139);
+    height: calc(100% - 80px);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    top:80px;
+    left:0;
+}
+
+.nodeco{
+    text-decoration: none !important;
+}
+
+.page{
+    width:45px;
+    height: 45px;
+    fill: white;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
